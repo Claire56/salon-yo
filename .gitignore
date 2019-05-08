@@ -1,4 +1,4 @@
 env/
 secrets.sh
-pycache
+__pycache__
 *PYC
