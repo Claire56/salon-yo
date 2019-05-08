@@ -72,19 +72,9 @@ Install dependencies:<br>
 $ pip install -r requirements.txt <br>
 Create database:<br><br>
 
-$ createdb homes<br>
-Build database:<br>
-
-$ python3 -i model.py<br>
->>> db.create_all() <br>
-Seed database:
-
-$ python3 -i seed.py <br>
-Run app:
 
 $ python3 server.py <br>
 Navigate to localhost:5000 in browser.
-
 
 
 ## Future Features
