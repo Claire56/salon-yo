@@ -1,11 +1,11 @@
 # locate_salon
-# Zyzy 
-Zyzy is a webapp that uses machine learning to estimate the value of a home in a different location.
+# Yalon-Yo 
+This is a simple webapp that uses the google api to find latititudes and longtudes of a place then uses the four square api to find a salon given a need. for example a user can say they want to braid hair and are in kampala Uganda. then they will recieve back the nearest salon, addresss and a picture of the salon
 
-### Provide estimate to the users 
-Here the users recieve their home estimate and a few statistics <br> <br>
+### Salon 
+Here the users recieve the closest salon based on their needs <br> <br>
 
-<a href="https://github.com/claire-Kimbugwe">
+<a href="https://github.com/claire56">
     <img alt="graphs" src="/static/graphs.gif" width="900" height="500">
     </a>
 
@@ -17,11 +17,10 @@ Here the users recieve their home estimate and a few statistics <br> <br>
 * [Future Features](#Future-Features)
 
 ## Overview
-Have you ever wondered how much your home would cost if it were in a different location?? well if you have, Zyzy is here for you. Zyzy is a fun web app that users can enjoy by finding out how much their home would cost if it where in a different location. The brain of the app was built using the gradient boasting machine learning algorithm. This included a long task of exploring and wrangling data, using pandas, matplotlib and seaborn. To make the best predictions, I explored three machine learning algorithmns as you will see in the demo to get a better feel of each one's contribution.
+Looking for the right place to go to get a service can sometimes be frastrating if you are new to the area. Salon-Yo, is designed to help users find the right saloon based on their need.
+
 #### Usage
-once the user gets to my homepage, I present to them the scope of the app(the available cities)
-They are then required to provide features of their home and also to choose a city of interest. That information is then sent to a handler and is used to predict the price of their house.
-In return they get the estimated price of their home in their chosen city and a few general statistics will be shown using chart.js 
+once the user gets to my homepage, they are required to enter their location and what they need
 
 
 
@@ -33,55 +32,32 @@ Frontend: Javascript , AJAX, JSON , JQuery, Jinja, HTML, CSS, Bootstrap <br>
 Libraries: D3.js, chart.js
 
 ## Demo
-### Data Wrangling and Exploration
-I used jupyter notebook on anaconda to wrangle data and to explore trends and relations <br>
-Below are a few visuals from my notebook 
+### Homepage
+Here the users provide the required information
+### Salon
+Here the user recieves back, the name , address and a picture of the salon.
 
-### Relationships between price and other features of the home
-
-<a href="https://github.com/claire_kimbugwe">
+<a href="https://github.com/claire56">
     <img alt="explore" src="/static/explore1.gif" width="800">
     </a>
 
-### Popularity of features based on the number of homes
+### None Found
+If no salon is found by the app, thee user recieves an apology 
 
 <a href="https://github.com/claire_kimbugwe">
     <img alt="explore" src="/static/explore3.gif" width="800">
     </a>
 
 
-### Pie charts showing popularity of features <br>
-<a href="https://github.com/claire_kimbugwe">
-    <img alt="explore" src="/static/explore2.gif" width="800">
-    </a>
-
-### ML Algorithmns <br>
-I had a chance to explore three different algorithmns, the linear regression, K-Nearest neighbor and gradient Boasting. I decided to use the Gradient boasting model because of its high prediction score and low mean absolute error rate
-
-<a href="https://github.com/claire_kimbugwe">
-    <img alt="explore" src="/static/ML.gif" width="800">
-    </a>
-
 <br> <br>
 ### HOMEPAGE <br>
 Below is muy landing page <br><br>
 
-<a href="https://github.com/claire_kimbugwe">
+<a href="https://github.com/claire56">
     <img alt="explore" src="/static/home.gif" width="800">
     </a>
 
-#### Get iformation about user's home <br>
-On this page the users provide their home features <br><br>
 
-<a href="https://github.com/claire_kimbugwe">
-    <img alt="explore" src="/static/features.gif" width="800">
-    </a>
-
-<br> <br>
-### Provide estimate to the users 
-Here the users recieve their home estimate and a few statistics <br>
-![graphs](/static/graphs.gif)
-<br> <br>
 ## Setup and installation
 On local machine, go to desired directory. Clone  repository:
 
@@ -112,8 +88,8 @@ Navigate to localhost:5000 in browser.
 
 
 ## Future Features
-* utelise housing API's to get running data that will be used in training the machine learning model
-* Add a login page for frequent visitors 
+* personalise the search
+* be able to provide the best 5 saloons in order based on reviews
 
 
 
