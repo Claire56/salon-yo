@@ -8,7 +8,7 @@ from flask import Flask ,request
 def longLat(city):
     # use google maps to get the longitude and latitude of the city
     location = city.replace(" ", "+")
-    google_key = os.environ["google_api_key"]
+    google_key = os.environ.get("google_api_key")
 
     url = (f'https://maps.googleapis.com/maps/api/geocode/json?address={location}&key={google_key}')
     h = httplib2.Http()
@@ -19,9 +19,11 @@ def longLat(city):
 
     r= h.request(url, 'GET')
     results = json.loads(r[1])
+    print(results)
     latitude =results['results'][0]['geometry']['location']['lat']
     longitude =results['results'][0]['geometry']['location']['lng']
     return (latitude,longitude)
+    # return results
 
 
 # print(longLat('los angeles CA'))
@@ -78,13 +80,4 @@ def salonType(need,loc):
 if __name__ == '__main__':
     salonType("Pizza", "Tokyo, Japan")
     
-    # findARestaurant("Tacos", "Jakarta, Indonesia")
-
-    # findARestaurant("Tapas", "Maputo, Mozambique")
-    # findARestaurant("Falafel", "Cairo, Egypt")
-    # findARestaurant("Spaghetti", "New Delhi, India")
-    # findARestaurant("Cappuccino", "Geneva, Switzerland")
-    # findARestaurant("Sushi", "Los Angeles, California")
-    # findARestaurant("Steak", "La Paz, Bolivia")
-    # findARestaurant("Gyros", "Sydney, Australia")
-
+    

@@ -30,8 +30,8 @@ def home():
 
 @app.route('/salon')
 def salonType():
-	need = request.get('need')
-	loc = request.get('loc')
+	need = request.args.get('need')
+	loc = request.args.get('loc')
 	# get latitude and longtude
 	lat, lng = longLat(loc)
 	cid =os.environ['foursquare_client_id']
