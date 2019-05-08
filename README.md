@@ -1,5 +1,5 @@
 # locate_salon
-# Yalon-Yo 
+# Salon-Yo 
 This is a simple webapp that uses the google api to find latititudes and longtudes of a place then uses the four square api to find a salon given a need. for example a user can say they want to braid hair and are in kampala Uganda. then they will recieve back the nearest salon, addresss and a picture of the salon
 
 ### Salon 
@@ -17,19 +17,19 @@ Here the users recieve the closest salon based on their needs <br> <br>
 * [Future Features](#Future-Features)
 
 ## Overview
-Looking for the right place to go to get a service can sometimes be frastrating if you are new to the area. Salon-Yo, is designed to help users find the right saloon based on their need.
+Looking for the right place to go to get a service can sometimes be frastrating if you are new to the area. Salon-Yo, is designed to help users find the closest salon based on their need.
 
 #### Usage
-once the user gets to my homepage, they are required to enter their location and what they need
+once the user gets to my homepage, they are required to enter their location and what they need, then they will recieve a salon, address and picture of the salon, if one exists depending on need.
 
 
 
 ## Tech Stack
-Data Wrangling: Pandas, Numpy , seaborn, matplotlib <br>
+Data Wrangling: Pandas <br>
 Framework: Flask <br>
-Backend: Python, SQLAlchemy, PostgreSQL ,SciKit_Learn <br>
+Backend: Python, SQLAlchemy, PostgreSQL  <br>
 Frontend: Javascript , AJAX, JSON , JQuery, Jinja, HTML, CSS, Bootstrap <br>
-Libraries: D3.js, chart.js
+Libraries: httplib2
 
 ## Demo
 ### Homepage
@@ -61,7 +61,7 @@ Below is muy landing page <br><br>
 ## Setup and installation
 On local machine, go to desired directory. Clone  repository:
 
-$ git clone https://github.com/Claire-Kimbugwe/House_value_estimate <br>
+$ git clone https://github.com/Claire56/locate_salon <br>
 Create a virtual environment in the directory:
 
 $ virtualenv env<br>
