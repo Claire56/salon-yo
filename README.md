@@ -61,7 +61,7 @@ Below is muy landing page <br><br>
 ## Setup and installation
 On local machine, go to desired directory. Clone  repository:
 
-$ git clone https://github.com/Claire56/locate_salon <br>
+$ git clone https://github.com/Claire56/salon-yo <br>
 Create a virtual environment in the directory:
 
 $ virtualenv env<br>
